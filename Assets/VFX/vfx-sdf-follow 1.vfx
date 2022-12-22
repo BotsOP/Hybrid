@@ -68,7 +68,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1331
     y: -190
-    width: 2698
+    width: 2697
     height: 2258
 --- !u!114 &114350483966674976
 MonoBehaviour:
@@ -5550,7 +5550,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.OrientedBox, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"center":{"x":0.0,"y":0.8740000128746033,"z":0.025775620713829995},"angles":{"x":0.0,"y":0.0,"z":0.0},"size":{"x":0.8199999928474426,"y":1.899999976158142,"z":1.0299999713897706}}'
+      m_SerializableObject: '{"center":{"x":-0.07382655143737793,"y":1.000219702720642,"z":-0.22141456604003907},"angles":{"x":0.0,"y":0.0,"z":0.0},"size":{"x":0.859175443649292,"y":1.899999976158142,"z":1.0299999713897706}}'
     m_Space: 0
   m_Property:
     name: FieldTransform
