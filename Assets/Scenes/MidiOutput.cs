@@ -55,6 +55,13 @@ public class MidiOutput : MonoBehaviour
         Debug.Log("Note " + note + " sent.");
     }
 
+    public void SendKnobValue(int ccNo, float value) {
+        ControlChangeEvent midiEvent = new ControlChangeEvent((SevenBitNumber)ccNo, (SevenBitNumber)((int)(value * 127)));
+        _outputDevice.SendEvent(midiEvent);
+
+        Debug.Log("Control value " + value + " sent to port " + 33 + ", channel " + midiEvent.Channel + ", CC#" + midiEvent.ControlNumber);
+    }
+
     public void TurnAllNotesOff() {
         _outputDevice.TurnAllNotesOff(); 
     }
