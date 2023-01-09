@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 85b86b37781bc2544add64e093be1049
+DefaultImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.21
+  assetPath: Assets/K2Examples/KinectDemos/KinectDataServer/NetworkAvatarDemo1.unity
+  uploadId: 457978
