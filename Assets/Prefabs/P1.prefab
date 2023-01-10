@@ -1,0 +1,381 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3696548244933966006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 383286460362451692}
+  - component: {fileID: 4676600548115322911}
+  m_Layer: 0
+  m_Name: P1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &383286460362451692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3696548244933966006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0844436, y: 0.81446505, z: -0.56559396}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9135039242448121221}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4676600548115322911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3696548244933966006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e73da4f1c2949c7439578b0d4adb09d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  midiManager: {fileID: 0}
+  sendMidiMessages: 1
+  posMidiCtrls:
+  - isActive: 0
+    midiCC: 101
+    joint: {fileID: 9135039242448120951}
+    inputDescription: The X position of the player's root, relative to the room.
+    effectDescription: Controls the base synth's ______.
+    dimension: 0
+    minCoordValue: -5
+    maxCoordValue: 5
+  - isActive: 0
+    midiCC: 102
+    joint: {fileID: 9135039242448120951}
+    inputDescription: The Y position of the player's root, relative to the room.
+    effectDescription: Controls the base synth's cutoff.
+    dimension: 1
+    minCoordValue: -5
+    maxCoordValue: 5
+  - isActive: 0
+    midiCC: 103
+    joint: {fileID: 9135039242448120951}
+    inputDescription: The Z position of the player's root, relative to the room.
+    effectDescription: Controls the base synth's ______.
+    dimension: 2
+    minCoordValue: -5
+    maxCoordValue: 5
+  relativePosMidiCtrls:
+  - isActive: 0
+    midiCC: 121
+    joint: {fileID: 9135039242448120847}
+    inputDescription: The X position of the player's left hand, relative to their
+      chest.
+    effectDescription: Controls ______.
+    dimension: 0
+    minCoordValue: -1
+    maxCoordValue: 1
+    root: {fileID: 9135039242448121237}
+  - isActive: 0
+    midiCC: 122
+    joint: {fileID: 9135039242448120847}
+    inputDescription: The Y position of the player's left hand, relative to their
+      chest.
+    effectDescription: Controls ______.
+    dimension: 1
+    minCoordValue: -1
+    maxCoordValue: 1
+    root: {fileID: 9135039242448121237}
+  - isActive: 0
+    midiCC: 123
+    joint: {fileID: 9135039242448120847}
+    inputDescription: The Z position of the player's left hand, relative to their
+      chest.
+    effectDescription: Controls ______.
+    dimension: 2
+    minCoordValue: -1
+    maxCoordValue: 1
+    root: {fileID: 9135039242448121237}
+  - isActive: 0
+    midiCC: 124
+    joint: {fileID: 9135039242448120841}
+    inputDescription: The X position of the player's right hand, relative to their
+      chest.
+    effectDescription: Controls ______.
+    dimension: 0
+    minCoordValue: -1
+    maxCoordValue: 1
+    root: {fileID: 9135039242448121237}
+  - isActive: 0
+    midiCC: 125
+    joint: {fileID: 9135039242448120841}
+    inputDescription: The Y position of the player's right hand, relative to their
+      chest.
+    effectDescription: Controls ______.
+    dimension: 1
+    minCoordValue: -1
+    maxCoordValue: 1
+    root: {fileID: 9135039242448121237}
+  - isActive: 0
+    midiCC: 126
+    joint: {fileID: 9135039242448120841}
+    inputDescription: The Z position of the player's right hand, relative to their
+      chest.
+    effectDescription: Controls ______.
+    dimension: 2
+    minCoordValue: -1
+    maxCoordValue: 1
+    root: {fileID: 9135039242448121237}
+  - isActive: 0
+    midiCC: 127
+    joint: {fileID: 9135039242448120841}
+    inputDescription: 'The X position of the player''s hips, relative to their waist.
+
+      (for
+      them booty shakin'' controls)'
+    effectDescription: Controls ______.
+    dimension: 0
+    minCoordValue: -0.5
+    maxCoordValue: 0.5
+    root: {fileID: 9135039242448121259}
+  - isActive: 0
+    midiCC: 127
+    joint: {fileID: 9135039242448120835}
+    inputDescription: 'The Y position of the player''s left ankle, relative to their
+      toes.
+
+      (recognizes when the player stands on their toes)'
+    effectDescription: Controls a high pass filter on the player's instrument.
+    dimension: 1
+    minCoordValue: 0
+    maxCoordValue: 0.1
+    root: {fileID: 9135039242448121261}
+  - isActive: 0
+    midiCC: 128
+    joint: {fileID: 9135039242448120845}
+    inputDescription: 'The Y position of the player''s right ankle, relative to their
+      toes.
+
+      (recognizes when the player stands on their toes)'
+    effectDescription: Controls a high pass filter on the player's instrument.
+    dimension: 1
+    minCoordValue: 0
+    maxCoordValue: 0.1
+    root: {fileID: 9135039242448121263}
+  proxMidiCtrls:
+  - isActive: 0
+    midiCC: 161
+    joint: {fileID: 9135039242448120847}
+    inputDescription: The proximity between the player's left and right hands.
+    effectDescription: Controls ______.
+    root: {fileID: 9135039242448120841}
+    maxDistance: 1
+  - isActive: 0
+    midiCC: 161
+    joint: {fileID: 9135039242448120841}
+    inputDescription: The proximity between the player's right hand and the other
+      player's left hand.
+    effectDescription: Controls distortion in the first half, and a harmonizing effect
+      in the second half.
+    root: {fileID: 0}
+    maxDistance: 1
+  velocityMidiControls:
+  - isActive: 0
+    midiCC: 181
+    joint: {fileID: 9135039242448120835}
+    inputDescription: The speed at which the player's left foot comes crashing down.
+    effectDescription: Triggers a bass drum.
+    triggerThreshold: 1
+    triggerCooldown: 0.2
+  - isActive: 0
+    midiCC: 182
+    joint: {fileID: 9135039242448120835}
+    inputDescription: The speed at which the player's right foot comes crashing down.
+    effectDescription: Triggers a bass drum.
+    triggerThreshold: 1
+    triggerCooldown: 0.2
+--- !u!1001 &9135039242447730357
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 383286460362451692}
+    m_Modifications:
+    - target: {fileID: 100176, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_Name
+      value: U_Character_REF
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.11636208
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.093539916
+      objectReference: {fileID: 0}
+    - target: {fileID: 400144, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.008588793
+      objectReference: {fileID: 0}
+    - target: {fileID: 400144, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.1228198
+      objectReference: {fileID: 0}
+    - target: {fileID: 400176, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400176, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400176, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400176, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400176, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400176, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400176, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400176, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400176, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400176, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400176, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100176, guid: ae23d50304c93b9418b65cec8f9fe954,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9138884907284845599}
+  m_SourcePrefab: {fileID: 100100000, guid: ae23d50304c93b9418b65cec8f9fe954, type: 3}
+--- !u!1 &9135039242447630821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100176, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9138884907284845599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9135039242447630821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c52c07402f7274cab64e484b1bddc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerIndex: 0
+  mirroredMovement: 0
+  verticalMovement: 1
+  horizontalMovement: 1
+  externalRootMotion: 0
+  externalHeadRotation: 0
+  externalHandRotations: 0
+  fingerOrientations: 0
+  moveRate: 1
+  smoothFactor: 10
+  offsetNode: {fileID: 0}
+  posRelativeToCamera: {fileID: 0}
+  posRelOverlayColor: 0
+  groundedFeet: 0
+  applyMuscleLimits: 0
+  flipLeftRight: 0
+  horizontalOffset: 0
+  verticalOffset: 0
+  forwardOffset: 0
+--- !u!4 &9135039242448120835 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400054, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448120841 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400060, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448120845 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400056, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448120847 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400058, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448120951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400066, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448121221 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400176, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448121237 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400160, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448121259 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400158, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448121261 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400152, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448121263 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400154, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}

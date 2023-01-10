@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BodyToMidiController : MonoBehaviour
@@ -7,39 +9,48 @@ public class BodyToMidiController : MonoBehaviour
     [Header("References")]
     public MidiOutput midiManager;
 
-    [Header("Physical room boundaries")]
-    public float minX;
-    public float maxX;
-    public float minY;
-    public float maxY;
-    public float minZ;
-    public float maxZ;
-
-    [Header("Body points")]
-    public Transform leftHandTx;
-    public Transform rightHandTx;
-    public Transform headTx;
-    public Transform hipTx;
-
-    [Header("Realtime variables")]
+    [Header("Runtime variables")]
     public bool sendMidiMessages;
+
+    [Header("MidiControls")]
+    public PosMidiControl[] posMidiCtrls;
+    public RelativePosMidiControl[] relativePosMidiCtrls;
+    public ProximityMidiControl[] proxMidiCtrls;
+    public VelocityMidiControl[] velocityMidiControls;
+    private List<MidiControl> allCtrls;
+
+    private void Start()
+    {
+        allCtrls = new List<MidiControl>();
+        allCtrls.AddRange(posMidiCtrls);
+        allCtrls.AddRange(relativePosMidiCtrls);
+        allCtrls.AddRange(proxMidiCtrls);
+        allCtrls.AddRange(velocityMidiControls);
+
+        foreach (MidiControl ctrl in allCtrls)
+        {
+            ctrl.OnStart(this);
+        }
+    }
 
     void Update()
     {
         if (sendMidiMessages)
         {
-            float leftHandX = Util.Remap(leftHandTx.position.x, minX, maxX, 0f, 1f);
-            midiManager.SendKnobValue(18, leftHandX);
-
-            float leftHandY = Util.Remap(leftHandTx.position.y, minY, maxY, 0f, 1f);
-            midiManager.SendKnobValue(19, leftHandY);
-
-            float leftHandZ = Util.Remap(leftHandTx.position.z, minZ, maxZ, 0f, 1f);
-            midiManager.SendKnobValue(20, leftHandZ);
+            foreach (MidiControl ctrl in allCtrls)
+            {
+                ctrl.OnUpdate(this);
+            }
         }
-        else
-        {
-            Debug.Log(leftHandTx.position.x + ", " + leftHandTx.position.y + ", " + leftHandTx.position.z);
-        }
+    }
+
+    public void SendKnobValue(int midiCC, float value)
+    {
+        midiManager.SendKnobValue(midiCC, value);
+    }
+
+    public void TriggerNote(int midiCC, int note)
+    {
+        midiManager.TriggerNote(midiCC, note);
     }
 }
