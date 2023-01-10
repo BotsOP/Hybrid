@@ -22,7 +22,7 @@ public class PosMidiControl : MidiControl
         return maxCoordValue;
     }
 
-    protected override float UpdateRawInputValue()
+    public override float UpdateRawInputValue()
     {
         return dimension switch
         {

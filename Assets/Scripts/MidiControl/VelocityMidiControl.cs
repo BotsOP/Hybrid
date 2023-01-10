@@ -33,7 +33,7 @@ public class VelocityMidiControl : MidiControl
         return 1.337f;
     }
 
-    protected override float UpdateRawInputValue()
+    public override float UpdateRawInputValue()
     {
         Vector3 thisFramePos = joint.position;
         float acceleration = Vector3.Distance(lastFramePos, thisFramePos);

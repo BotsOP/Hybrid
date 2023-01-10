@@ -9,10 +9,11 @@ public class RelativePosMidiControl : PosMidiControl
 
     public override void OnStart(BodyToMidiController controller)
     {
+        base.OnStart(controller);
         if (root == null) Debug.LogError("Missing root transform reference!");
     }
 
-    protected override float UpdateRawInputValue()
+    public override float UpdateRawInputValue()
     {
         Vector3 relativePos = joint.transform.position - root.transform.position;
 

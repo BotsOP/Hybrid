@@ -94,13 +94,18 @@ public class MidiOutput : MonoBehaviour
         }
     }
     
-    public void SendKnobValue(int midiCC, float value) {
+    public void SendKnobValue(int midiCC, float value)
+    {
         ControlChangeEvent midiEvent = new ControlChangeEvent((SevenBitNumber)midiCC, (SevenBitNumber)(value * 127));
         _outputDevice.SendEvent(midiEvent);
     }
-    
-    public void TurnAllNotesOff() {
+
+    private void TurnAllNotesOff() {
         _outputDevice.TurnAllNotesOff(); 
     }
 
+    private void OnDestroy()
+    {
+        TurnAllNotesOff();
+    }
 }

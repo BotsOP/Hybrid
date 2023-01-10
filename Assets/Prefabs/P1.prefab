@@ -46,95 +46,97 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   midiManager: {fileID: 0}
-  sendMidiMessages: 1
+  debugTextLabel: {fileID: 0}
+  sendMidiMessages: 0
+  enableDebugging: 1
   posMidiCtrls:
   - isActive: 0
-    midiCC: 101
+    midiCC: 1
     joint: {fileID: 9135039242448120951}
     inputDescription: The X position of the player's root, relative to the room.
     effectDescription: Controls the base synth's ______.
     dimension: 0
-    minCoordValue: -5
-    maxCoordValue: 5
+    minCoordValue: -1
+    maxCoordValue: 1
   - isActive: 0
-    midiCC: 102
+    midiCC: 2
     joint: {fileID: 9135039242448120951}
     inputDescription: The Y position of the player's root, relative to the room.
     effectDescription: Controls the base synth's cutoff.
     dimension: 1
-    minCoordValue: -5
-    maxCoordValue: 5
+    minCoordValue: 0
+    maxCoordValue: 1.5
   - isActive: 0
-    midiCC: 103
+    midiCC: 3
     joint: {fileID: 9135039242448120951}
     inputDescription: The Z position of the player's root, relative to the room.
     effectDescription: Controls the base synth's ______.
     dimension: 2
-    minCoordValue: -5
-    maxCoordValue: 5
+    minCoordValue: -1
+    maxCoordValue: 1
   relativePosMidiCtrls:
   - isActive: 0
-    midiCC: 121
+    midiCC: 11
     joint: {fileID: 9135039242448120847}
     inputDescription: The X position of the player's left hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: -1
-    maxCoordValue: 1
+    minCoordValue: -0.75
+    maxCoordValue: 0.75
     root: {fileID: 9135039242448121237}
   - isActive: 0
-    midiCC: 122
+    midiCC: 12
     joint: {fileID: 9135039242448120847}
     inputDescription: The Y position of the player's left hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 1
-    minCoordValue: -1
-    maxCoordValue: 1
+    minCoordValue: -0.75
+    maxCoordValue: 0.75
     root: {fileID: 9135039242448121237}
   - isActive: 0
-    midiCC: 123
+    midiCC: 13
     joint: {fileID: 9135039242448120847}
     inputDescription: The Z position of the player's left hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 2
-    minCoordValue: -1
-    maxCoordValue: 1
+    minCoordValue: -0.75
+    maxCoordValue: 0.75
     root: {fileID: 9135039242448121237}
   - isActive: 0
-    midiCC: 124
+    midiCC: 14
     joint: {fileID: 9135039242448120841}
     inputDescription: The X position of the player's right hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: -1
-    maxCoordValue: 1
+    minCoordValue: -0.75
+    maxCoordValue: 0.75
     root: {fileID: 9135039242448121237}
   - isActive: 0
-    midiCC: 125
+    midiCC: 15
     joint: {fileID: 9135039242448120841}
     inputDescription: The Y position of the player's right hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 1
-    minCoordValue: -1
-    maxCoordValue: 1
+    minCoordValue: -0.75
+    maxCoordValue: 0.75
     root: {fileID: 9135039242448121237}
   - isActive: 0
-    midiCC: 126
+    midiCC: 16
     joint: {fileID: 9135039242448120841}
     inputDescription: The Z position of the player's right hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 2
-    minCoordValue: -1
-    maxCoordValue: 1
+    minCoordValue: -0.75
+    maxCoordValue: 0.75
     root: {fileID: 9135039242448121237}
   - isActive: 0
-    midiCC: 127
+    midiCC: 17
     joint: {fileID: 9135039242448120951}
     inputDescription: 'The X position of the player''s hips, relative to their waist.
 
@@ -142,11 +144,11 @@ MonoBehaviour:
       them booty shakin'' controls)'
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: -0.5
-    maxCoordValue: 0.5
+    minCoordValue: -0.75
+    maxCoordValue: 0.75
     root: {fileID: 9135039242448121259}
   - isActive: 0
-    midiCC: 128
+    midiCC: 18
     joint: {fileID: 9135039242448120835}
     inputDescription: 'The Y position of the player''s left ankle, relative to their
       toes.
@@ -159,38 +161,38 @@ MonoBehaviour:
     root: {fileID: 9135039242448121261}
   proxMidiCtrls:
   - isActive: 0
-    midiCC: 141
+    midiCC: 31
     joint: {fileID: 9135039242448120847}
     inputDescription: The proximity between the player's hands.
     effectDescription: Controls ______.
     root: {fileID: 9135039242448120841}
-    maxDistance: 3
+    maxDistance: 1.25
   - isActive: 0
-    midiCC: 142
+    midiCC: 32
     joint: {fileID: 9135039242448120951}
-    inputDescription: The proximity between the player's hips to the other player's
+    inputDescription: The proximity between the player's hips and the other player's
       hips.
     effectDescription: Controls ______.
     root: {fileID: 0}
     maxDistance: 5
   - isActive: 0
-    midiCC: 143
-    joint: {fileID: 9135039242448120951}
-    inputDescription: The proximity between the player's hips to the center of their
-      space.
+    midiCC: 33
+    joint: {fileID: 9135039242448120845}
+    inputDescription: The proximity between the player's right foot and the center
+      of their space.
     effectDescription: Controls ______.
     root: {fileID: 0}
-    maxDistance: 5
+    maxDistance: 4
   velocityMidiControls:
   - isActive: 0
-    midiCC: 161
+    midiCC: 41
     joint: {fileID: 9135039242448120835}
     inputDescription: The speed at which the player's left foot comes crashing down.
     effectDescription: Triggers a bass drum.
     triggerThreshold: 1
     triggerCooldown: 0.2
   - isActive: 0
-    midiCC: 162
+    midiCC: 42
     joint: {fileID: 9135039242448120845}
     inputDescription: The speed at which the player's right foot comes crashing down.
     effectDescription: Triggers a bass drum.

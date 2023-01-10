@@ -1,16 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BodyToMidiController : MonoBehaviour
 {
     [Header("References")]
     public MidiOutput midiManager;
+    [SerializeField] private TMP_Text debugTextLabel;
 
     [Header("Runtime variables")]
     public bool sendMidiMessages;
+    public bool enableDebugging;
 
     [Header("MidiControls")]
     public PosMidiControl[] posMidiCtrls;
@@ -42,10 +47,19 @@ public class BodyToMidiController : MonoBehaviour
                 ctrl.OnUpdate(this);
             }
         }
+        else if (enableDebugging)
+        {
+            MidiControl ctrl = allCtrls.FirstOrDefault(c => c.isActive);
+            if (ctrl != null) debugTextLabel.text = ctrl.UpdateRawInputValue() + " (" + ctrl.inputDescription + ")";
+            else debugTextLabel.text = "No active MidiControl found";
+        }
+        else debugTextLabel.text = "";
     }
 
     public void SendKnobValue(int midiCC, float value)
     {
+        if (enableDebugging) debugTextLabel.text = "Value [" + value + "] sent to MIDI CC#" + midiCC;
+        
         midiManager.SendKnobValue(midiCC, value);
     }
 

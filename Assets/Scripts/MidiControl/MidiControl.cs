@@ -33,5 +33,5 @@ public abstract class MidiControl
         controller.SendKnobValue(midiCC, mappedValue);
     }
 
-    protected abstract float UpdateRawInputValue();
+    public abstract float UpdateRawInputValue();
 }
