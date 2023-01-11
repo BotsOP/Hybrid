@@ -17,6 +17,10 @@ public class BodyToMidiController : MonoBehaviour
     public bool sendMidiMessages;
     public bool enableDebugging;
 
+    [Range(1, 60)] public int updatesPerSecond = 10;
+    private float _updateInterval;
+    private float _updateTimer;
+
     [Header("MidiControls")]
     public PosMidiControl[] posMidiCtrls;
     public RelativePosMidiControl[] relativePosMidiCtrls;
@@ -26,6 +30,8 @@ public class BodyToMidiController : MonoBehaviour
 
     private void Start()
     {
+        _updateInterval = 1.0f / updatesPerSecond;
+        
         allCtrls = new List<MidiControl>();
         allCtrls.AddRange(posMidiCtrls);
         allCtrls.AddRange(relativePosMidiCtrls);
@@ -40,20 +46,27 @@ public class BodyToMidiController : MonoBehaviour
 
     void Update()
     {
-        if (sendMidiMessages)
+        if (_updateTimer <= 0)
         {
-            foreach (MidiControl ctrl in allCtrls)
+            _updateTimer = _updateInterval;
+            if (sendMidiMessages)
             {
-                ctrl.OnUpdate(this);
+                foreach (MidiControl ctrl in allCtrls)
+                {
+                    ctrl.OnUpdate(this);
+                }
             }
+            else if (enableDebugging)
+            {
+                MidiControl ctrl = allCtrls.FirstOrDefault(c => c.isActive);
+                if (ctrl != null) debugTextLabel.text = ctrl.UpdateRawInputValue() + " (" + ctrl.inputDescription + ")";
+                else debugTextLabel.text = "No active MidiControl found";
+            }
+            
+            if (!enableDebugging) debugTextLabel.text = "";
         }
-        else if (enableDebugging)
-        {
-            MidiControl ctrl = allCtrls.FirstOrDefault(c => c.isActive);
-            if (ctrl != null) debugTextLabel.text = ctrl.UpdateRawInputValue() + " (" + ctrl.inputDescription + ")";
-            else debugTextLabel.text = "No active MidiControl found";
-        }
-        else debugTextLabel.text = "";
+        
+        _updateTimer -= Time.deltaTime;
     }
 
     public void SendKnobValue(int midiCC, float value)

@@ -49,8 +49,9 @@ MonoBehaviour:
   debugTextLabel: {fileID: 0}
   sendMidiMessages: 0
   enableDebugging: 1
+  updatesPerSecond: 10
   posMidiCtrls:
-  - isActive: 0
+  - isActive: 1
     midiCC: 1
     joint: {fileID: 9135039242448120951}
     inputDescription: The X position of the player's root, relative to the room.
@@ -58,7 +59,7 @@ MonoBehaviour:
     dimension: 0
     minCoordValue: -1
     maxCoordValue: 1
-  - isActive: 0
+  - isActive: 1
     midiCC: 2
     joint: {fileID: 9135039242448120951}
     inputDescription: The Y position of the player's root, relative to the room.
@@ -66,7 +67,7 @@ MonoBehaviour:
     dimension: 1
     minCoordValue: 0
     maxCoordValue: 1.5
-  - isActive: 0
+  - isActive: 1
     midiCC: 3
     joint: {fileID: 9135039242448120951}
     inputDescription: The Z position of the player's root, relative to the room.
@@ -75,7 +76,7 @@ MonoBehaviour:
     minCoordValue: -1
     maxCoordValue: 1
   relativePosMidiCtrls:
-  - isActive: 0
+  - isActive: 1
     midiCC: 11
     joint: {fileID: 9135039242448120847}
     inputDescription: The X position of the player's left hand, relative to their
@@ -85,7 +86,7 @@ MonoBehaviour:
     minCoordValue: -0.75
     maxCoordValue: 0.75
     root: {fileID: 9135039242448121237}
-  - isActive: 0
+  - isActive: 1
     midiCC: 12
     joint: {fileID: 9135039242448120847}
     inputDescription: The Y position of the player's left hand, relative to their
@@ -95,7 +96,7 @@ MonoBehaviour:
     minCoordValue: -0.75
     maxCoordValue: 0.75
     root: {fileID: 9135039242448121237}
-  - isActive: 0
+  - isActive: 1
     midiCC: 13
     joint: {fileID: 9135039242448120847}
     inputDescription: The Z position of the player's left hand, relative to their
@@ -105,7 +106,7 @@ MonoBehaviour:
     minCoordValue: -0.75
     maxCoordValue: 0.75
     root: {fileID: 9135039242448121237}
-  - isActive: 0
+  - isActive: 1
     midiCC: 14
     joint: {fileID: 9135039242448120841}
     inputDescription: The X position of the player's right hand, relative to their
@@ -115,7 +116,7 @@ MonoBehaviour:
     minCoordValue: -0.75
     maxCoordValue: 0.75
     root: {fileID: 9135039242448121237}
-  - isActive: 0
+  - isActive: 1
     midiCC: 15
     joint: {fileID: 9135039242448120841}
     inputDescription: The Y position of the player's right hand, relative to their
@@ -125,7 +126,7 @@ MonoBehaviour:
     minCoordValue: -0.75
     maxCoordValue: 0.75
     root: {fileID: 9135039242448121237}
-  - isActive: 0
+  - isActive: 1
     midiCC: 16
     joint: {fileID: 9135039242448120841}
     inputDescription: The Z position of the player's right hand, relative to their
@@ -160,7 +161,7 @@ MonoBehaviour:
     maxCoordValue: 0.1
     root: {fileID: 9135039242448121261}
   proxMidiCtrls:
-  - isActive: 0
+  - isActive: 1
     midiCC: 31
     joint: {fileID: 9135039242448120847}
     inputDescription: The proximity between the player's hands.
@@ -175,14 +176,54 @@ MonoBehaviour:
     effectDescription: Controls ______.
     root: {fileID: 0}
     maxDistance: 5
-  - isActive: 0
+  - isActive: 1
     midiCC: 33
+    joint: {fileID: 9135039242448120835}
+    inputDescription: The proximity between the player's left foot and the center
+      of their space.
+    effectDescription: Controls ______.
+    root: {fileID: 0}
+    maxDistance: 4
+  - isActive: 1
+    midiCC: 34
     joint: {fileID: 9135039242448120845}
     inputDescription: The proximity between the player's right foot and the center
       of their space.
     effectDescription: Controls ______.
     root: {fileID: 0}
     maxDistance: 4
+  - isActive: 1
+    midiCC: 35
+    joint: {fileID: 9135039242448120847}
+    inputDescription: The proximity between the player's left hand and their left
+      hip.
+    effectDescription: Controls ______.
+    root: {fileID: 9135039242448120949}
+    maxDistance: 1
+  - isActive: 1
+    midiCC: 36
+    joint: {fileID: 9135039242448120841}
+    inputDescription: The proximity between the player's right hand and their right
+      hip.
+    effectDescription: Controls ______.
+    root: {fileID: 9135039242448120945}
+    maxDistance: 1
+  - isActive: 1
+    midiCC: 37
+    joint: {fileID: 9135039242448120847}
+    inputDescription: The proximity between the player's left hand and their right
+      elbow.
+    effectDescription: Controls ______.
+    root: {fileID: 9135039242448120865}
+    maxDistance: 1
+  - isActive: 1
+    midiCC: 38
+    joint: {fileID: 9135039242448120841}
+    inputDescription: The proximity between the player's right hand and their left
+      elbow.
+    effectDescription: Controls ______.
+    root: {fileID: 9135039242448120871}
+    maxDistance: 1
   velocityMidiControls:
   - isActive: 0
     midiCC: 41
@@ -337,6 +378,30 @@ Transform:
 --- !u!4 &9135039242448120847 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400058, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448120865 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400020, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448120871 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400018, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448120945 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400068, guid: ae23d50304c93b9418b65cec8f9fe954,
+    type: 3}
+  m_PrefabInstance: {fileID: 9135039242447730357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135039242448120949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400064, guid: ae23d50304c93b9418b65cec8f9fe954,
     type: 3}
   m_PrefabInstance: {fileID: 9135039242447730357}
   m_PrefabAsset: {fileID: 0}

@@ -1969,12 +1969,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1701018998}
   m_SourcePrefab: {fileID: 100100000, guid: 8b9ef9766f8a96b429ff3885bab2c2e3, type: 3}
---- !u!4 &996684076 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9135039242448120951, guid: 5ba4c839fc19e984eae1a86aabb335c1,
-    type: 3}
-  m_PrefabInstance: {fileID: 4490136630711539800}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1003580618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 947619712505389234, guid: d0015e8c8575c57469e25c869a96934f,
@@ -4345,36 +4339,6 @@ PrefabInstance:
       propertyPath: proxMidiCtrls.Array.data[2].root
       value: 
       objectReference: {fileID: 375311847}
-    - target: {fileID: 4676600548115322911, guid: 5ba4c839fc19e984eae1a86aabb335c1,
-        type: 3}
-      propertyPath: proxMidiCtrls.Array.data[3].root
-      value: 
-      objectReference: {fileID: 1003580618}
-    - target: {fileID: 4676600548115322911, guid: 5ba4c839fc19e984eae1a86aabb335c1,
-        type: 3}
-      propertyPath: proxMidiCtrls.Array.data[3].joint
-      value: 
-      objectReference: {fileID: 996684076}
-    - target: {fileID: 4676600548115322911, guid: 5ba4c839fc19e984eae1a86aabb335c1,
-        type: 3}
-      propertyPath: proxMidiCtrls.Array.data[3].midiCC
-      value: 142
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676600548115322911, guid: 5ba4c839fc19e984eae1a86aabb335c1,
-        type: 3}
-      propertyPath: proxMidiCtrls.Array.data[3].maxDistance
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676600548115322911, guid: 5ba4c839fc19e984eae1a86aabb335c1,
-        type: 3}
-      propertyPath: proxMidiCtrls.Array.data[3].inputDescription
-      value: The proximity between the player's hips to the other player's hips.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676600548115322911, guid: 5ba4c839fc19e984eae1a86aabb335c1,
-        type: 3}
-      propertyPath: proxMidiCtrls.Array.data[3].effectDescription
-      value: Controls ______.
-      objectReference: {fileID: 0}
     - target: {fileID: 9138884907284845599, guid: 5ba4c839fc19e984eae1a86aabb335c1,
         type: 3}
       propertyPath: posRelativeToCamera
