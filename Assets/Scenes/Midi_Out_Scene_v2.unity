@@ -4339,6 +4339,11 @@ PrefabInstance:
       propertyPath: proxMidiCtrls.Array.data[2].root
       value: 
       objectReference: {fileID: 375311847}
+    - target: {fileID: 4676600548115322911, guid: 5ba4c839fc19e984eae1a86aabb335c1,
+        type: 3}
+      propertyPath: proxMidiCtrls.Array.data[3].root
+      value: 
+      objectReference: {fileID: 375311847}
     - target: {fileID: 9138884907284845599, guid: 5ba4c839fc19e984eae1a86aabb335c1,
         type: 3}
       propertyPath: posRelativeToCamera
