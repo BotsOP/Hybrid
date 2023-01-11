@@ -57,24 +57,24 @@ MonoBehaviour:
     inputDescription: The X position of the player's root, relative to the room.
     effectDescription: Controls the base synth's ______.
     dimension: 0
-    minCoordValue: -1
-    maxCoordValue: 1
+    minCoordValue: -1.5
+    maxCoordValue: 2
   - isActive: 1
     midiCC: 2
     joint: {fileID: 9135039242448120951}
     inputDescription: The Y position of the player's root, relative to the room.
     effectDescription: Controls the base synth's cutoff.
     dimension: 1
-    minCoordValue: 0
-    maxCoordValue: 1.5
+    minCoordValue: 0.65
+    maxCoordValue: 2
   - isActive: 1
     midiCC: 3
     joint: {fileID: 9135039242448120951}
     inputDescription: The Z position of the player's root, relative to the room.
     effectDescription: Controls the base synth's ______.
     dimension: 2
-    minCoordValue: -1
-    maxCoordValue: 1
+    minCoordValue: -5.75
+    maxCoordValue: -9
   relativePosMidiCtrls:
   - isActive: 1
     midiCC: 11
@@ -83,8 +83,8 @@ MonoBehaviour:
       chest.
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: -0.75
-    maxCoordValue: 0.75
+    minCoordValue: -0.6
+    maxCoordValue: 0.35
     root: {fileID: 9135039242448121237}
   - isActive: 1
     midiCC: 12
@@ -93,8 +93,8 @@ MonoBehaviour:
       chest.
     effectDescription: Controls ______.
     dimension: 1
-    minCoordValue: -0.75
-    maxCoordValue: 0.75
+    minCoordValue: -0.4
+    maxCoordValue: 0.6
     root: {fileID: 9135039242448121237}
   - isActive: 1
     midiCC: 13
@@ -103,8 +103,8 @@ MonoBehaviour:
       chest.
     effectDescription: Controls ______.
     dimension: 2
-    minCoordValue: -0.75
-    maxCoordValue: 0.75
+    minCoordValue: -0.5
+    maxCoordValue: 0.5
     root: {fileID: 9135039242448121237}
   - isActive: 1
     midiCC: 14
@@ -113,8 +113,8 @@ MonoBehaviour:
       chest.
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: -0.75
-    maxCoordValue: 0.75
+    minCoordValue: -0.6
+    maxCoordValue: 0.35
     root: {fileID: 9135039242448121237}
   - isActive: 1
     midiCC: 15
@@ -123,8 +123,8 @@ MonoBehaviour:
       chest.
     effectDescription: Controls ______.
     dimension: 1
-    minCoordValue: -0.75
-    maxCoordValue: 0.75
+    minCoordValue: -0.4
+    maxCoordValue: 0.6
     root: {fileID: 9135039242448121237}
   - isActive: 1
     midiCC: 16
@@ -133,10 +133,10 @@ MonoBehaviour:
       chest.
     effectDescription: Controls ______.
     dimension: 2
-    minCoordValue: -0.75
-    maxCoordValue: 0.75
+    minCoordValue: -0.5
+    maxCoordValue: 0.5
     root: {fileID: 9135039242448121237}
-  - isActive: 0
+  - isActive: 1
     midiCC: 17
     joint: {fileID: 9135039242448120951}
     inputDescription: 'The X position of the player''s hips, relative to their waist.
@@ -145,8 +145,8 @@ MonoBehaviour:
       them booty shakin'' controls)'
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: -0.75
-    maxCoordValue: 0.75
+    minCoordValue: -0.05
+    maxCoordValue: 0.05
     root: {fileID: 9135039242448121259}
   - isActive: 0
     midiCC: 18
@@ -183,7 +183,7 @@ MonoBehaviour:
       of their space.
     effectDescription: Controls ______.
     root: {fileID: 0}
-    maxDistance: 4
+    maxDistance: 1.5
   - isActive: 1
     midiCC: 34
     joint: {fileID: 9135039242448120845}
@@ -191,7 +191,7 @@ MonoBehaviour:
       of their space.
     effectDescription: Controls ______.
     root: {fileID: 0}
-    maxDistance: 4
+    maxDistance: 2.25
   - isActive: 1
     midiCC: 35
     joint: {fileID: 9135039242448120847}

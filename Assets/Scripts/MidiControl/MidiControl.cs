@@ -28,7 +28,7 @@ public abstract class MidiControl
         if (!isActive) return;
         
         float inputValue = UpdateRawInputValue();
-        float mappedValue = Util.Remap(inputValue, _minInputValue, _maxInputValue, 0f, 1f);
+        float mappedValue = Util.Remap(inputValue, GetMinInputValue(), GetMaxInputValue(controller), 0f, 1f);
         
         controller.SendKnobValue(midiCC, mappedValue);
     }

@@ -59,8 +59,14 @@ public class BodyToMidiController : MonoBehaviour
             else if (enableDebugging)
             {
                 MidiControl ctrl = allCtrls.FirstOrDefault(c => c.isActive);
-                if (ctrl != null) debugTextLabel.text = ctrl.UpdateRawInputValue() + " (" + ctrl.inputDescription + ")";
-                else debugTextLabel.text = "No active MidiControl found";
+                if (ctrl != null)
+                {
+                    debugTextLabel.text = ctrl.UpdateRawInputValue() + " (" + ctrl.inputDescription + " / " + _updateTimer + ")";
+                }
+                else
+                {
+                    debugTextLabel.text = "No active MidiControl found";
+                }
             }
             
             if (!enableDebugging) debugTextLabel.text = "";
@@ -71,7 +77,15 @@ public class BodyToMidiController : MonoBehaviour
 
     public void SendKnobValue(int midiCC, float value)
     {
-        if (enableDebugging) debugTextLabel.text = "Value [" + value + "] sent to MIDI CC#" + midiCC;
+        if (value < 0 && value > 1)
+        {
+            if (enableDebugging)
+            {
+                debugTextLabel.text = "Value [" + value + "] sent to MIDI CC#" + midiCC + " - out of bounds!";
+                value = Math.Clamp(value, 0, 1);
+            }
+        }
+        else if (enableDebugging) debugTextLabel.text = "Value [" + value + "] sent to MIDI CC#" + midiCC;
         
         midiManager.SendKnobValue(midiCC, value);
     }
