@@ -135,11 +135,11 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   skyIntensityMode:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   exposure:
     m_OverrideState: 1
-    m_Value: 11
+    m_Value: 8
   multiplier:
     m_OverrideState: 0
     m_Value: 1
@@ -150,8 +150,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: {x: 0.18750614, y: 0.29181972, z: 0.5}
   desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
+    m_OverrideState: 1
+    m_Value: 400
   updateMode:
     m_OverrideState: 0
     m_Value: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.287
   scatter:
     m_OverrideState: 0
     m_Value: 0.7
