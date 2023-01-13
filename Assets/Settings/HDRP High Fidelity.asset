@@ -108,7 +108,7 @@ MonoBehaviour:
       maxDecalsOnScreen: 512
       maxLightsPerClusterCell: 16
       maxLocalVolumetricFogSize: 32
-      maxLocalVolumetricFogOnScreen: 64
+      maxLocalVolumetricFogOnScreen: 114
     hdShadowInitParams:
       maxShadowRequests: 128
       directionalShadowsDepthBits: 16
