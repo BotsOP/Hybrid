@@ -322,17 +322,17 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 400
   enableVolumetricFog:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   albedo:
     m_OverrideState: 1
-    m_Value: {r: 0.11360803, g: 0.1182024, b: 0.21698111, a: 1}
+    m_Value: {r: 0.31148094, g: 0.32018298, b: 0.5377358, a: 1}
   globalLightProbeDimmer:
     m_OverrideState: 0
     m_Value: 1
   depthExtent:
     m_OverrideState: 0
-    m_Value: 64
+    m_Value: 58.7
   denoisingMode:
     m_OverrideState: 0
     m_Value: 2
