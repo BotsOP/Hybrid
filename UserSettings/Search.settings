@@ -8,9 +8,9 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"picker_window_position_offset.74AD8FDB" = "699.2;416.8;320;550.4"
-	"picker_search_text.74AD8FDB" = ""
-	"last_search.74AD8FDB" = ""
+	"picker_window_position_offset.74AD8FDB" = "60.80005;232.8;320;550.4"
+	"picker_search_text.74AD8FDB" = "star"
+	"last_search.74AD8FDB" = "star"
 	"OpenInspectorPreview.74AD8FDB" = "0"
 	"currentGroup.74AD8FDB" = null
 }
@@ -64,6 +64,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"sta"
 ]
 searchItemFavorites = [
 ]
