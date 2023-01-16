@@ -66,15 +66,15 @@ Material:
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
-    - _Base_scale: 0.003
-    - _Base_speed: 5
+    - _Base_scale: 0.015
+    - _Base_speed: 3
     - _Base_strenght: 1.3
     - _BlendMode: 0
-    - _Cloud_speed: 20
+    - _Cloud_speed: 6
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
-    - _Curvature: 49.68
+    - _Curvature: 58.5
     - _DepthOffsetEnable: 0
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
@@ -83,15 +83,15 @@ Material:
     - _Emmision_strenght: 0.15
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
-    - _Fresnel_Opacity: 0.38
-    - _Fresnel_Strenght: 11.83
+    - _Fresnel_Opacity: 1.1
+    - _Fresnel_Strenght: 11.25
     - _Noice_scale: -0.01
-    - _Noice_strength: 1.91
-    - _Normal_Hight: 6000
+    - _Noice_strength: 0.97
+    - _Normal_Hight: 5000
     - _OpaqueCullMode: 2
     - _RenderQueueType: 4
-    - _Smooth_curve_0: -0.54
-    - _Smooth_curve_1: 1.13
+    - _Smooth_curve_0: 2
+    - _Smooth_curve_1: 0
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 1
@@ -104,7 +104,7 @@ Material:
     - _StencilWriteMaskGBuffer: 15
     - _StencilWriteMaskMV: 43
     - _SurfaceType: 1
-    - _Transparency: 86.51
+    - _Transparency: 14.51
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
     - _TransparentDepthPostpassEnable: 0
