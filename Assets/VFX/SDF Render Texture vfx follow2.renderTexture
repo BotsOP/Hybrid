@@ -6,7 +6,7 @@ RenderTexture:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SDF Render Texture vfx follow
+  m_Name: SDF Render Texture vfx follow2
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -15,7 +15,7 @@ RenderTexture:
   m_IsAlphaChannelOptional: 0
   serializedVersion: 5
   m_Width: 64
-  m_Height: 61
+  m_Height: 48
   m_AntiAliasing: 1
   m_MipCount: -1
   m_DepthStencilFormat: 0
@@ -35,5 +35,5 @@ RenderTexture:
     m_WrapV: 1
     m_WrapW: 1
   m_Dimension: 3
-  m_VolumeDepth: 49
+  m_VolumeDepth: 25
   m_ShadowSamplingMode: 2
