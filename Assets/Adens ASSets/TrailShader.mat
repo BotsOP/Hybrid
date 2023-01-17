@@ -47,7 +47,7 @@ Material:
   - TransparentBackface
   - RayTracingPrepass
   - MOTIONVECTORS
-  m_LockedProperties: 
+  m_LockedProperties: :m_EnableInstancingVariants
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -120,9 +120,10 @@ Material:
     - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
     - _ZWrite: 0
+    - _emissive: 15
     m_Colors:
-    - _Color01: {r: 2896.3074, g: 106.14744, b: 608.8774, a: 1}
-    - _Color02: {r: 0, g: 761.45734, b: 11585.237, a: 0}
+    - _Color01: {r: 645473.8, g: 23656.121, b: 135695, a: 1}
+    - _Color02: {r: 0, g: 257215.73, b: 3913424, a: 0}
     - _DissolveSpeed: {r: -0.5, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}

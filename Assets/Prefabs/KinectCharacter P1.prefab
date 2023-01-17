@@ -3194,7 +3194,7 @@ MonoBehaviour:
     maxDistance: 1.25
   - isActive: 0
     midiCC: 32
-    joint: {fileID: 9135039242448120951, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 6245608532614371729}
     inputDescription: The proximity between the player's hips and the other player's
       hips.
     effectDescription: Controls ______.
