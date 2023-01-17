@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ContentModelUserStore">
-    <attachedFolders />
+  <component name="UserContentModel">
+    <attachedFolders>
+      <Path>../../Users/prutm/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.services.core@1.0.1</Path>
+    </attachedFolders>
     <explicitIncludes>
-      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.services.core@1.0.1</Path>
       <Path>Library/PackageCache/com.unity.ai.navigation@1.1.1</Path>
       <Path>Library/PackageCache/com.unity.burst@1.8.2</Path>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.17.6</Path>
@@ -66,10 +67,5 @@
       <Path>obj</Path>
       <Path>vgbtechs</Path>
     </explicitExcludes>
-  </component>
-  <component name="UserContentModel">
-    <attachedFolders />
-    <explicitIncludes />
-    <explicitExcludes />
   </component>
 </project>
