@@ -11,7 +11,7 @@ public class ProximityMidiControl : MidiControl
     public override void OnStart(BodyToMidiController controller)
     {
         base.OnStart(controller);
-        if (root == null) Debug.LogError("Missing root transform reference!");
+        if (root == null) Debug.LogError("Missing root transform reference on CC#" + midiCC);
     }
 
     protected override float GetMinInputValue()
@@ -26,6 +26,8 @@ public class ProximityMidiControl : MidiControl
 
     public override float UpdateRawInputValue()
     {
-        return Vector3.Distance(joint.transform.position, root.transform.position);
+        if (root) return Vector3.Distance(joint.transform.position, root.transform.position);
+
+        return maxDistance;
     }
 }
