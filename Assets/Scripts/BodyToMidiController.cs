@@ -69,7 +69,7 @@ public class BodyToMidiController : MonoBehaviour
                 }
             }
             
-            if (!enableDebugging) debugTextLabel.text = "";
+            if (!enableDebugging && debugTextLabel) debugTextLabel.text = "";
         }
         
         _updateTimer -= Time.deltaTime;
@@ -77,13 +77,13 @@ public class BodyToMidiController : MonoBehaviour
 
     public void SendKnobValue(int midiCC, float value)
     {
-        if (value < 0 && value > 1)
+        if (value < 0 || value > 1)
         {
             if (enableDebugging)
             {
                 debugTextLabel.text = "Value [" + value + "] sent to MIDI CC#" + midiCC + " - out of bounds!";
-                value = Math.Clamp(value, 0, 1);
             }
+            value = Math.Clamp(value, 0, 1);
         }
         else if (enableDebugging) debugTextLabel.text = "Value [" + value + "] sent to MIDI CC#" + midiCC;
         
