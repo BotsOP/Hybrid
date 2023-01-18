@@ -118,10 +118,10 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _Accent_Colour: {r: 0.24263082, g: 0.260866, b: 0.4056604, a: 0}
+    - _Accent_Colour: {r: 0.29916987, g: 0.24313726, b: 0.40392157, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Main_Colour: {r: 0.8233535, g: 0.8933071, b: 0.9245283, a: 0}
+    - _Main_Colour: {r: 0.72965467, g: 0.875714, b: 0.9056604, a: 0}
     - _Noice_Adjustments: {r: 0, g: 1, b: -1, a: 1}
     - _Projection_rotation: {r: 1, g: 0, b: 0, a: 90}
   m_BuildTextureStacks: []
