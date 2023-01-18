@@ -1094,130 +1094,120 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   midiManager: {fileID: 0}
   debugTextLabel: {fileID: 0}
-  sendMidiMessages: 0
-  enableDebugging: 1
+  sendMidiMessages: 1
+  enableDebugging: 0
   updatesPerSecond: 10
-  posMidiCtrls:
-  - isActive: 1
-    midiCC: 51
-    joint: {fileID: 9135039242448120951, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    inputDescription: The X position of the player's root, relative to the room.
-    effectDescription: Controls the base synth's ______.
-    dimension: 0
-    minCoordValue: -1.5
-    maxCoordValue: 2
-  - isActive: 1
-    midiCC: 52
-    joint: {fileID: 9135039242448120951, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    inputDescription: The Y position of the player's root, relative to the room.
-    effectDescription: Controls the base synth's cutoff.
-    dimension: 1
-    minCoordValue: 0.65
-    maxCoordValue: 2
-  - isActive: 1
-    midiCC: 53
-    joint: {fileID: 9135039242448120951, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    inputDescription: The Z position of the player's root, relative to the room.
-    effectDescription: Controls the base synth's ______.
-    dimension: 2
-    minCoordValue: -5.75
-    maxCoordValue: -9
   relativePosMidiCtrls:
   - isActive: 1
+    midiCC: 51
+    joint: {fileID: 8464995837345610074}
+    inputDescription: The X position of the player's root, relative to the room.
+    effectDescription: Controls ______.
+    dimension: 0
+    minCoordValue: 0.4
+    maxCoordValue: 1.9
+    root: {fileID: 0}
+  - isActive: 1
+    midiCC: 52
+    joint: {fileID: 8464995837345610074}
+    inputDescription: The Y position of the player's root, relative to the room.
+    effectDescription: Controls ______.
+    dimension: 1
+    minCoordValue: 0.5
+    maxCoordValue: 1.6
+    root: {fileID: 0}
+  - isActive: 1
+    midiCC: 53
+    joint: {fileID: 8464995837345610074}
+    inputDescription: The Z position of the player's root, relative to the room.
+    effectDescription: Controls ______.
+    dimension: 2
+    minCoordValue: 0.8
+    maxCoordValue: -1.2
+    root: {fileID: 0}
+  - isActive: 1
     midiCC: 61
-    joint: {fileID: 9135039242448120847, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 1453942814092465734}
     inputDescription: The X position of the player's left hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: -0.6
-    maxCoordValue: 0.35
-    root: {fileID: 9135039242448121237, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    minCoordValue: -0.35
+    maxCoordValue: 0.6
+    root: {fileID: 8741075715857438282}
   - isActive: 1
     midiCC: 62
-    joint: {fileID: 9135039242448120847, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 1453942814092465734}
     inputDescription: The Y position of the player's left hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 1
-    minCoordValue: -0.4
+    minCoordValue: -0.35
     maxCoordValue: 0.6
-    root: {fileID: 9135039242448121237, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    root: {fileID: 8741075715857438282}
   - isActive: 1
     midiCC: 63
-    joint: {fileID: 9135039242448120847, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 1453942814092465734}
     inputDescription: The Z position of the player's left hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 2
-    minCoordValue: -0.5
-    maxCoordValue: 0.5
-    root: {fileID: 9135039242448121237, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    minCoordValue: 0.25
+    maxCoordValue: -0.44
+    root: {fileID: 8741075715857438282}
   - isActive: 1
     midiCC: 64
-    joint: {fileID: 9135039242448120841, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 7105058668363790566}
     inputDescription: The X position of the player's right hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: -0.6
-    maxCoordValue: 0.35
-    root: {fileID: 9135039242448121237, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    minCoordValue: 0.35
+    maxCoordValue: -0.6
+    root: {fileID: 8741075715857438282}
   - isActive: 1
     midiCC: 65
-    joint: {fileID: 9135039242448120841, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 7105058668363790566}
     inputDescription: The Y position of the player's right hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 1
-    minCoordValue: -0.4
+    minCoordValue: -0.35
     maxCoordValue: 0.6
-    root: {fileID: 9135039242448121237, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    root: {fileID: 8741075715857438282}
   - isActive: 1
     midiCC: 66
-    joint: {fileID: 9135039242448120841, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 7105058668363790566}
     inputDescription: The Z position of the player's right hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 2
-    minCoordValue: -0.5
-    maxCoordValue: 0.5
-    root: {fileID: 9135039242448121237, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    minCoordValue: 0.25
+    maxCoordValue: -0.44
+    root: {fileID: 8741075715857438282}
   - isActive: 1
     midiCC: 67
-    joint: {fileID: 9135039242448120951, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 8464995837345610074}
     inputDescription: 'The X position of the player''s hips, relative to their waist.
 
       (for
       them booty shakin'' controls)'
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: -0.05
-    maxCoordValue: 0.05
-    root: {fileID: 9135039242448121259, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-  - isActive: 0
-    midiCC: 68
-    joint: {fileID: 9135039242448120835, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    inputDescription: 'The Y position of the player''s left ankle, relative to their
-      toes.
-
-      (recognizes when the player stands on their toes)'
-    effectDescription: Controls a high pass filter on the player's instrument.
-    dimension: 1
-    minCoordValue: 0
-    maxCoordValue: 0.1
-    root: {fileID: 9135039242448121261, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    minCoordValue: -0.035
+    maxCoordValue: 0.035
+    root: {fileID: 5758542004424634953}
   proxMidiCtrls:
   - isActive: 1
     midiCC: 81
-    joint: {fileID: 9135039242448120847, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 1453942814092465734}
     inputDescription: The proximity between the player's hands.
     effectDescription: Controls ______.
-    root: {fileID: 9135039242448120841, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    maxDistance: 1.25
+    root: {fileID: 7105058668363790566}
+    maxDistance: 1.15
   - isActive: 0
     midiCC: 82
-    joint: {fileID: 9135039242448120951, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 8464995837345610074}
     inputDescription: The proximity between the player's hips and the other player's
       hips.
     effectDescription: Controls ______.
@@ -1225,7 +1215,7 @@ MonoBehaviour:
     maxDistance: 5
   - isActive: 1
     midiCC: 83
-    joint: {fileID: 9135039242448120835, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 7319855761373430778}
     inputDescription: The proximity between the player's left foot and the center
       of their space.
     effectDescription: Controls ______.
@@ -1233,59 +1223,44 @@ MonoBehaviour:
     maxDistance: 1.5
   - isActive: 1
     midiCC: 84
-    joint: {fileID: 9135039242448120845, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 3039123445997404035}
     inputDescription: The proximity between the player's right foot and the center
       of their space.
     effectDescription: Controls ______.
     root: {fileID: 0}
-    maxDistance: 2.25
-  - isActive: 1
+    maxDistance: 1.5
+  - isActive: 0
     midiCC: 85
-    joint: {fileID: 9135039242448120847, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 1453942814092465734}
     inputDescription: The proximity between the player's left hand and their left
       hip.
     effectDescription: Controls ______.
-    root: {fileID: 9135039242448120949, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    root: {fileID: 0}
     maxDistance: 1
-  - isActive: 1
+  - isActive: 0
     midiCC: 86
-    joint: {fileID: 9135039242448120841, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 0}
     inputDescription: The proximity between the player's right hand and their right
       hip.
     effectDescription: Controls ______.
-    root: {fileID: 9135039242448120945, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    root: {fileID: 0}
     maxDistance: 1
-  - isActive: 1
+  - isActive: 0
     midiCC: 87
-    joint: {fileID: 9135039242448120847, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 0}
     inputDescription: The proximity between the player's left hand and their right
       elbow.
     effectDescription: Controls ______.
-    root: {fileID: 9135039242448120865, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    root: {fileID: 0}
     maxDistance: 1
-  - isActive: 1
+  - isActive: 0
     midiCC: 88
-    joint: {fileID: 9135039242448120841, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 0}
     inputDescription: The proximity between the player's right hand and their left
       elbow.
     effectDescription: Controls ______.
-    root: {fileID: 9135039242448120871, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    root: {fileID: 0}
     maxDistance: 1
-  velocityMidiControls:
-  - isActive: 0
-    midiCC: 41
-    joint: {fileID: 9135039242448120835, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    inputDescription: The speed at which the player's left foot comes crashing down.
-    effectDescription: Triggers a bass drum.
-    triggerThreshold: 1
-    triggerCooldown: 0.2
-  - isActive: 0
-    midiCC: 42
-    joint: {fileID: 9135039242448120845, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    inputDescription: The speed at which the player's right foot comes crashing down.
-    effectDescription: Triggers a bass drum.
-    triggerThreshold: 1
-    triggerCooldown: 0.2
 --- !u!95 &373810736046673004
 Animator:
   serializedVersion: 6

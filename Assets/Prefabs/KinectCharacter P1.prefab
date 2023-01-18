@@ -1832,7 +1832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7795553178609390902
 Transform:
   m_ObjectHideFlags: 0
@@ -1897,7 +1897,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5436262714424042132}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2094,7 +2094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6251836285697438229
 Transform:
   m_ObjectHideFlags: 0
@@ -2123,7 +2123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SDF: {fileID: 8400000, guid: 1a34a51d8eafb234aacfb85bb917fa0b, type: 2}
-  m_Size: {x: 1.5, y: 1.9, z: 1}
+  m_Size: {x: 2.5, y: 1.9, z: 1}
   m_Resolution: 64
 --- !u!1 &6274552435235335639
 GameObject:
@@ -2565,7 +2565,7 @@ SkinnedMeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6944542047362132669}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3043,7 +3043,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8187959022177593973}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3055,8 +3055,8 @@ Transform:
   - {fileID: 7795553178609390902}
   - {fileID: 6251836285697438229}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!114 &4556594159955492241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3071,127 +3071,117 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   midiManager: {fileID: 0}
   debugTextLabel: {fileID: 0}
-  sendMidiMessages: 0
-  enableDebugging: 1
+  sendMidiMessages: 1
+  enableDebugging: 0
   updatesPerSecond: 10
-  posMidiCtrls:
-  - isActive: 1
-    midiCC: 1
-    joint: {fileID: 9135039242448120951, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    inputDescription: The X position of the player's root, relative to the room.
-    effectDescription: Controls the base synth's ______.
-    dimension: 0
-    minCoordValue: -1.5
-    maxCoordValue: 2
-  - isActive: 1
-    midiCC: 2
-    joint: {fileID: 9135039242448120951, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    inputDescription: The Y position of the player's root, relative to the room.
-    effectDescription: Controls the base synth's cutoff.
-    dimension: 1
-    minCoordValue: 0.65
-    maxCoordValue: 2
-  - isActive: 1
-    midiCC: 3
-    joint: {fileID: 9135039242448120951, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    inputDescription: The Z position of the player's root, relative to the room.
-    effectDescription: Controls the base synth's ______.
-    dimension: 2
-    minCoordValue: -5.75
-    maxCoordValue: -9
   relativePosMidiCtrls:
   - isActive: 1
+    midiCC: 1
+    joint: {fileID: 6245608532614371729}
+    inputDescription: The X position of the player's root, relative to the room.
+    effectDescription: Controls ______.
+    dimension: 0
+    minCoordValue: 0.4
+    maxCoordValue: 1.9
+    root: {fileID: 0}
+  - isActive: 1
+    midiCC: 2
+    joint: {fileID: 6245608532614371729}
+    inputDescription: The Y position of the player's root, relative to the room.
+    effectDescription: Controls ______.
+    dimension: 1
+    minCoordValue: 0.5
+    maxCoordValue: 1.6
+    root: {fileID: 0}
+  - isActive: 1
+    midiCC: 3
+    joint: {fileID: 6245608532614371729}
+    inputDescription: The Z position of the player's root, relative to the room.
+    effectDescription: Controls ______.
+    dimension: 2
+    minCoordValue: 0.8
+    maxCoordValue: -1.2
+    root: {fileID: 0}
+  - isActive: 1
     midiCC: 11
-    joint: {fileID: 9135039242448120847, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 2389154863320363956}
     inputDescription: The X position of the player's left hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: -0.6
-    maxCoordValue: 0.35
-    root: {fileID: 9135039242448121237, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    minCoordValue: -0.35
+    maxCoordValue: 0.6
+    root: {fileID: 768406918968929631}
   - isActive: 1
     midiCC: 12
-    joint: {fileID: 9135039242448120847, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 2389154863320363956}
     inputDescription: The Y position of the player's left hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 1
-    minCoordValue: -0.4
+    minCoordValue: -0.35
     maxCoordValue: 0.6
-    root: {fileID: 9135039242448121237, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    root: {fileID: 768406918968929631}
   - isActive: 1
     midiCC: 13
-    joint: {fileID: 9135039242448120847, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 2389154863320363956}
     inputDescription: The Z position of the player's left hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 2
-    minCoordValue: -0.5
-    maxCoordValue: 0.5
-    root: {fileID: 9135039242448121237, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    minCoordValue: 0.25
+    maxCoordValue: -0.44
+    root: {fileID: 768406918968929631}
   - isActive: 1
     midiCC: 14
-    joint: {fileID: 9135039242448120841, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 6570324835672631349}
     inputDescription: The X position of the player's right hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: -0.6
-    maxCoordValue: 0.35
-    root: {fileID: 9135039242448121237, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    minCoordValue: 0.35
+    maxCoordValue: -0.6
+    root: {fileID: 768406918968929631}
   - isActive: 1
     midiCC: 15
-    joint: {fileID: 9135039242448120841, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 6570324835672631349}
     inputDescription: The Y position of the player's right hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 1
-    minCoordValue: -0.4
+    minCoordValue: -0.35
     maxCoordValue: 0.6
-    root: {fileID: 9135039242448121237, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    root: {fileID: 768406918968929631}
   - isActive: 1
     midiCC: 16
-    joint: {fileID: 9135039242448120841, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 6570324835672631349}
     inputDescription: The Z position of the player's right hand, relative to their
       chest.
     effectDescription: Controls ______.
     dimension: 2
-    minCoordValue: -0.5
-    maxCoordValue: 0.5
-    root: {fileID: 9135039242448121237, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    minCoordValue: 0.25
+    maxCoordValue: -0.44
+    root: {fileID: 768406918968929631}
   - isActive: 1
     midiCC: 17
-    joint: {fileID: 9135039242448120951, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 6245608532614371729}
     inputDescription: 'The X position of the player''s hips, relative to their waist.
 
       (for
       them booty shakin'' controls)'
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: -0.05
-    maxCoordValue: 0.05
-    root: {fileID: 9135039242448121259, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-  - isActive: 0
-    midiCC: 18
-    joint: {fileID: 9135039242448120835, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    inputDescription: 'The Y position of the player''s left ankle, relative to their
-      toes.
-
-      (recognizes when the player stands on their toes)'
-    effectDescription: Controls a high pass filter on the player's instrument.
-    dimension: 1
-    minCoordValue: 0
-    maxCoordValue: 0.1
-    root: {fileID: 9135039242448121261, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    minCoordValue: -0.035
+    maxCoordValue: 0.035
+    root: {fileID: 2378884508474543305}
   proxMidiCtrls:
   - isActive: 1
     midiCC: 31
-    joint: {fileID: 9135039242448120847, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 2389154863320363956}
     inputDescription: The proximity between the player's hands.
     effectDescription: Controls ______.
-    root: {fileID: 9135039242448120841, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    maxDistance: 1.25
+    root: {fileID: 6570324835672631349}
+    maxDistance: 1.15
   - isActive: 0
     midiCC: 32
     joint: {fileID: 6245608532614371729}
@@ -3202,7 +3192,7 @@ MonoBehaviour:
     maxDistance: 5
   - isActive: 1
     midiCC: 33
-    joint: {fileID: 9135039242448120835, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 451588848507174960}
     inputDescription: The proximity between the player's left foot and the center
       of their space.
     effectDescription: Controls ______.
@@ -3210,59 +3200,44 @@ MonoBehaviour:
     maxDistance: 1.5
   - isActive: 1
     midiCC: 34
-    joint: {fileID: 9135039242448120845, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 5604526082480414585}
     inputDescription: The proximity between the player's right foot and the center
       of their space.
     effectDescription: Controls ______.
     root: {fileID: 0}
-    maxDistance: 2.25
-  - isActive: 1
+    maxDistance: 1.5
+  - isActive: 0
     midiCC: 35
-    joint: {fileID: 9135039242448120847, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 2389154863320363956}
     inputDescription: The proximity between the player's left hand and their left
       hip.
     effectDescription: Controls ______.
-    root: {fileID: 9135039242448120949, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    root: {fileID: 1715001139908803802}
     maxDistance: 1
-  - isActive: 1
+  - isActive: 0
     midiCC: 36
-    joint: {fileID: 9135039242448120841, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 6570324835672631349}
     inputDescription: The proximity between the player's right hand and their right
       hip.
     effectDescription: Controls ______.
-    root: {fileID: 9135039242448120945, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    root: {fileID: 7826231764629283090}
     maxDistance: 1
-  - isActive: 1
+  - isActive: 0
     midiCC: 37
-    joint: {fileID: 9135039242448120847, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 2389154863320363956}
     inputDescription: The proximity between the player's left hand and their right
       elbow.
     effectDescription: Controls ______.
-    root: {fileID: 9135039242448120865, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    root: {fileID: 138388697565401484}
     maxDistance: 1
-  - isActive: 1
+  - isActive: 0
     midiCC: 38
-    joint: {fileID: 9135039242448120841, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    joint: {fileID: 6570324835672631349}
     inputDescription: The proximity between the player's right hand and their left
       elbow.
     effectDescription: Controls ______.
-    root: {fileID: 9135039242448120871, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
+    root: {fileID: 3594155093447188354}
     maxDistance: 1
-  velocityMidiControls:
-  - isActive: 0
-    midiCC: 41
-    joint: {fileID: 9135039242448120835, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    inputDescription: The speed at which the player's left foot comes crashing down.
-    effectDescription: Triggers a bass drum.
-    triggerThreshold: 1
-    triggerCooldown: 0.2
-  - isActive: 0
-    midiCC: 42
-    joint: {fileID: 9135039242448120845, guid: 5ba4c839fc19e984eae1a86aabb335c1, type: 3}
-    inputDescription: The speed at which the player's right foot comes crashing down.
-    effectDescription: Triggers a bass drum.
-    triggerThreshold: 1
-    triggerCooldown: 0.2
 --- !u!95 &324990605477498451
 Animator:
   serializedVersion: 6
@@ -3413,7 +3388,7 @@ SkinnedMeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8676969427493147465}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

@@ -22,10 +22,8 @@ public class BodyToMidiController : MonoBehaviour
     private float _updateTimer;
 
     [Header("MidiControls")]
-    public PosMidiControl[] posMidiCtrls;
     public RelativePosMidiControl[] relativePosMidiCtrls;
     public ProximityMidiControl[] proxMidiCtrls;
-    public VelocityMidiControl[] velocityMidiControls;
     private List<MidiControl> allCtrls;
 
     private void Start()
@@ -33,10 +31,8 @@ public class BodyToMidiController : MonoBehaviour
         _updateInterval = 1.0f / updatesPerSecond;
         
         allCtrls = new List<MidiControl>();
-        allCtrls.AddRange(posMidiCtrls);
         allCtrls.AddRange(relativePosMidiCtrls);
         allCtrls.AddRange(proxMidiCtrls);
-        allCtrls.AddRange(velocityMidiControls);
 
         foreach (MidiControl ctrl in allCtrls)
         {

@@ -8,6 +8,8 @@ public class CharacterEnabler : MonoBehaviour
     [SerializeField] GameObject p1;
     [SerializeField] GameObject p2;
 
+    [SerializeField] MidiOutput midiManager;
+
     void Update() {
         CharacterActivation();
     }
@@ -23,5 +25,13 @@ public class CharacterEnabler : MonoBehaviour
         } else {
             if(p2.activeSelf)p2.SetActive(false);
         }
+
+        SendMidi();
+    }
+
+    void SendMidi() {
+        midiManager.SendKnobValue(97, p1.activeSelf ? 1 : 0);
+        midiManager.SendKnobValue(98, p2.activeSelf ? 1 : 0);
+        midiManager.SendKnobValue(99, p1.activeSelf && p2.activeSelf ? 1 : 0);
     }
 }
