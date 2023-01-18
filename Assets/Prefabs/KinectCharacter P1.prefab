@@ -3182,7 +3182,7 @@ MonoBehaviour:
     effectDescription: Controls ______.
     root: {fileID: 6570324835672631349}
     maxDistance: 1.15
-  - isActive: 0
+  - isActive: 1
     midiCC: 32
     joint: {fileID: 6245608532614371729}
     inputDescription: The proximity between the player's hips and the other player's
