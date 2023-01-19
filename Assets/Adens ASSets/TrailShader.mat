@@ -122,8 +122,8 @@ Material:
     - _ZWrite: 0
     - _emissive: 15
     m_Colors:
-    - _Color01: {r: 12.996027, g: 0.47629443, b: 2.732095, a: 1}
-    - _Color02: {r: 0, g: 710.4648, b: 10809.408, a: 0}
+    - _Color01: {r: 14263.092, g: 522.7314, b: 2998.4644, a: 1}
+    - _Color02: {r: 0, g: 6528.8784, b: 99334, a: 0}
     - _DissolveSpeed: {r: -0.5, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
