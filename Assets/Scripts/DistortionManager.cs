@@ -32,8 +32,10 @@ public class DistortionManager : MonoBehaviour
         {
             Vector3 avgChestPos = (chest1.position + chest2.position) / 2;
             float chestDist = Vector3.Distance(chest1.position, chest2.position);
-            chestDist = Remap(chestDist, 0, 10, 0, 1);
-            float distortRadius = Mathf.Lerp(maxRadius, minRadius, chestDist);
+            chestDist = Remap(chestDist, 0, 5, 1, 0);
+            chestDist *= chestDist;
+            Debug.Log(chestDist);
+            float distortRadius = Mathf.Lerp(minRadius, maxRadius, chestDist);
             transform.localScale = new Vector3(distortRadius, distortRadius, distortRadius);
             vfxPlayer1.SetVector3("distortPos", avgChestPos);
             vfxPlayer1.SetFloat("distortRadius", distortRadius);
