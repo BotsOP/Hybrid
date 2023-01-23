@@ -1098,14 +1098,14 @@ MonoBehaviour:
   enableDebugging: 0
   updatesPerSecond: 10
   relativePosMidiCtrls:
-  - isActive: 1
+  - isActive: 0
     midiCC: 51
     joint: {fileID: 8464995837345610074}
     inputDescription: The X position of the player's root, relative to the room.
     effectDescription: Controls ______.
     dimension: 0
-    minCoordValue: 0.4
-    maxCoordValue: 1.9
+    minCoordValue: 0.2
+    maxCoordValue: 0.5
     root: {fileID: 0}
   - isActive: 1
     midiCC: 52
@@ -1113,8 +1113,8 @@ MonoBehaviour:
     inputDescription: The Y position of the player's root, relative to the room.
     effectDescription: Controls ______.
     dimension: 1
-    minCoordValue: 0.5
-    maxCoordValue: 1.6
+    minCoordValue: 0.25
+    maxCoordValue: 1.2
     root: {fileID: 0}
   - isActive: 1
     midiCC: 53
@@ -1122,8 +1122,8 @@ MonoBehaviour:
     inputDescription: The Z position of the player's root, relative to the room.
     effectDescription: Controls ______.
     dimension: 2
-    minCoordValue: 0.8
-    maxCoordValue: -1.2
+    minCoordValue: 1.15
+    maxCoordValue: -1
     root: {fileID: 0}
   - isActive: 1
     midiCC: 61

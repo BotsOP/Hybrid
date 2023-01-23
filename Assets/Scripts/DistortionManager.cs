@@ -13,7 +13,7 @@ public class DistortionManager : MonoBehaviour
     [SerializeField] private float distTillCalm;
     [SerializeField] private float maxRadius;
     [SerializeField] private float minRadius;
-    private bool reachedCalm;
+    public bool reachedCalm;
 
     // private void OnDrawGizmos()
     // {
